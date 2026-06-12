@@ -2,11 +2,11 @@ name: New MCP server
 version: 0.0.1
 schema: v1
 mcpServers:
-  - name: search-the-web
-    command: C:\Users\Kuldeep.Tiwari\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.PythonManager_qbz5n2kfra8p0\python3.exe #result of command which python3. Do create venv (virtual env and do pip install in this directory first)
+  - name: search-the-web-nondocker-mcp
+    command: <path_to_python3>\python3.exe #result of command which.exe python3(windows) or command which python3(mac/linux). Do create venv (virtual env and do pip install in this directory first)
     args:
-      - C:\Users\Kuldeep.Tiwari\Documents\code\dev-tools\code-assist-with-local-LLM\mcp_search_server.py
+      - <path_to_project>\mcp_search_server.py
     env:
-      TAVILY_API_KEY: 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
+      TAVILY_API_KEY: <your_tavily_api_key>
 
 
