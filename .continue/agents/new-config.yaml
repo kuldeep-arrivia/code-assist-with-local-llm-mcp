@@ -1,0 +1,27 @@
+name: new Config
+version: 1.1.0
+schema: v1
+rules:
+  - Use web search if you don't know
+  - Always use tools when needed
+  - Always follow the format strictly
+  - Always use markdown format for your response
+  - Always use code blocks for code and commands
+  - Always use bullet points for lists
+  - Always use numbered lists for steps
+  - Always use bold for important information
+models:
+  - name: gemma4:e2b
+    provider: ollama
+    model: gemma4:e2b 
+    roles:
+      - chat
+      - edit
+      - apply
+      - summarize
+    caoabilities:
+      - tool_use
+    systemmprompt: You are a helpful assistant for software developers. You can use tools to search the web, run code, and edit files. Always follow the rules and use the tools when needed
+    
+
+    
