@@ -224,10 +224,19 @@ The `Dockerfile` packages this server into a slim, non‑root `python:3.12-slim`
 
 ## Troubleshooting
 
-- **Agent does nothing / no tools appear** — confirm you are in **Agent** mode and that your model supports tool calling.
+- **Agent does nothing / no tools appear** — confirm you are in **Agent** mode and that your model supports tool calling. Use mcp dev browser tool to test tools.
+
+```bash
+pip install "mcp[cli]"
+mcp dev mcp_search_server.py
+```
+
+See the list of tools in the 'Tools' tab,  execute the tools and check errors, if any.
+
+![Continue Tools panel](assets/mcp-dev.png)
+
 - **Web search fails** — verify your `TAVILY_API_KEY` is set correctly in the chosen `mcpServers` YAML, and that the tool is toggled **on** in the Tools panel.
 - **Continue tried to use the search-the-web-nondocker-mcp search_web tool** - search_the_web_nondocker_mcp_search_web failed with the message: [{"type":"text","text":"Error executing tool search_web: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)"}].
-
 Your VPN or corporate network needs to allow calls to taviliy (host='api.tavily.com', port=443)
 - **Docker command not found** — run `which docker` (macOS/Linux) or `where docker` (Windows) and update the `command:` path in the YAML accordingly.
 - **Slow responses** — try a smaller model, close memory‑heavy apps, or use a machine with more RAM/GPU.
