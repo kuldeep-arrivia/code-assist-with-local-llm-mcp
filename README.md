@@ -243,26 +243,3 @@ Your VPN or corporate network needs to allow calls to taviliy (host='api.tavily.
 
 ---
 
-## License
-
-This project can be used and distributed freely as per the MIT licnese. Please refer LICENSE.md for more details.
-
-## Disclaimer
-
-By using Arrivia’s Open Source Tool, You understand and agree to the following:
-
-Arrivia PROVIDES THIS OPEN SOURCE TOOL “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
-
-IN NO EVENT SHALL Arrivia NOR ANY OF OUR AFFILIATES, BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-IN NO EVENT SHALL Arrivia OR OUR AFFILIATES BE LIABLE FOR ANY SPECIAL, PUNITIVE, CONSEQUENTIAL, INCIDENTAL OR INDIRECT DAMAGES, HOWEVER CAUSED, ON ANY THEORY OF LIABILITY EVEN IF YOU HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-
-IN NO EVENT IS Arrivia LIABLE FOR ANY DAMAGES CAUSED BY YOUR OR ANY THIRD PARTY'S ACTS OR OMISSIONS.
-
-The application code has been tested on few environments as mentioned in the ‘Technical Details’ section, but it may have possible issues when being installed on user’s environments. Arrivia is not providing any technical support on fixing any potential issues.
-
-The project does not ship any data or code from the Arrivia application. It does not transfer any user data back to Arrivia.
-
-The code does not ship any 3rd party code (library or large language model). It downloads all the required libraries and models during installation using user's system/network.
-
-Our Open Source tool may display inaccurate info, including about people, so double-check its responses.
